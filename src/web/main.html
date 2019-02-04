@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <title>ESPrinkler - Main Menu</title>
+    </head>
+    <body>
+        <div style="text-align:center;font-weight:normal;font-size:40px">ESPrinkler</div><br/>
+        <div id="time" style="text-align:center;font-weight:normal;font-size:40px">18:30 15/09/1969</div><br/>
+        <table style="width:100%">
+            <tbody>
+                <tr>
+                    <td>
+                        <form action="/tm" method="get">
+                            <button>Timers</button>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <form action="/rd" method="get">
+                            <button>Rain delay</button>
+                        </form>
+                    </td>
+                    <td>
+                        <div id="rainDelay" style="text-align:left;font-weight:normal;font-size:20px">No rain delay</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <form action="/wa" method="get">
+                            <button>Water adjust</button>
+                        </form>
+                    </td>
+                    <td>
+                        <div id="waterAdjust" style="text-align:left;font-weight:normal;font-size:20px">No water adjust</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <form action="/tt" method="get">
+                            <button>Timers off</button>
+                        </form>
+                    </td>
+                    <td>
+                        <div id="nextTimer" style="text-align:left;font-weight:normal;font-size:20px">Next Zone 3 (Sun 15/09/1969 03:30)</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <form action="/tl" method="get">
+                            <button>Tools</button>
+                        </form>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br/>
+        <br/>
+        <table style="width:100%">
+            <tbody>
+                <tr>
+                    <td style="width:25%">
+                        <form action="/wn01" method="get">
+                            <button class="sprinkler">Zone 1</button><br/>
+                            <div id="nextTimer01" style="text-align:center;font-weight:normal;font-size:12px">Tue 15/09/1969 04:40</div>
+                        </form>
+                    </td>
+                    <td style="width:25%">
+                        <form action="/wn02" method="get">
+                            <button class="wateringSprinkler">Zone 2</button><br/>
+                            <div id="nextTimer02" style="text-align:center;font-weight:normal;font-size:12px">Tue 15/09/1969 04:40</div>
+                        </form>
+                    </td>
+                    <td style="width:25%"></td>
+                    <td style="width:25%"></td>
+                </tr>
+            </tbody>     
+        </table>
+        <hr/>
+        <div style="text-align:right;font-size:11px;">
+            <a href="https://bit.ly/esprinkler" target="_blank" style="color:#aaa;">ESPrinkler 1.0.0 by Bubi</a>
+        </div>
+    </body>
+</html>

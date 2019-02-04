@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,user-scalable=no"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>ESPrinkler - Timers</title>
+  </head>
+  <body>
+    <div style="text-align:left;display:inline-block;min-width:340px;">
+      <div style="text-align:center;font-weight:normal;font-size:40px">
+        ESPrinkler
+      </div>
+      <br />
+      <fieldset>
+          <legend style="text-align: left">Timers</legend>
+      <div style="text-align:left;font-weight:normal;font-size:20px">
+        <a class="timerEnabled" href="dontknow">1 - Zone 3 - On Sun, Wed 03:45, 15mins</a><br />
+        <a class="timerDisabled" href="dontknow">2 - Zone 1 - On Sun, Wed 03:45, 15mins</a><br />
+      </div>
+      <br />
+      <button>Add schedule</button>
+        </fieldset>
+        <fieldset>
+            <legend style="text-align:left">Edit timer</legend>
+      <div style="text-align:left;font-weight:normal;font-size:20px">
+        2 - Zone 1 - On Sun, Wed 03:45, 15mins<br /><br/>
+      </div>
+      <button>Move up</button><br/><br/>
+      <button>Move down</button>
+      <hr/>
+      <div style="text-align: left">
+        <input style="width: 10%" id="enabled" type="checkbox" />Enabled<br/><br/>
+        Zone<br/>
+        <select id="zone">
+            <option value="1">Zone 1</option>
+            <option value="2">Zone 2</option>
+        </select><br/><br/>
+        Start time<br/>
+        <input id="time" type="time" /><br/><br/>
+        Duration<br/>
+        <input id="duration" type="number" min="0" step="1" pattern="\d+" /><br/><br/>
+        Days<br/>
+
+        <input style="width: 3%" id="w0" type="checkbox" />Sun
+        <input style="width: 3%" id="w1" type="checkbox" />Mon
+        <input style="width: 3%" id="w2" type="checkbox" />Tue
+        <input style="width: 3%" id="w3" type="checkbox" />Wed
+        <input style="width: 3%" id="w4" type="checkbox" />Thy
+        <input style="width: 3%" id="w5" type="checkbox" />Fri
+        <input style="width: 3%" id="w6" type="checkbox" />Sat<br/><br/>
+        <input style="width: 5%" id="evenDays" type="checkbox" />Even days
+        <input style="width: 5%" id="oddDays" type="checkbox" />Odd days<br/><br/>
+        Months<br/>
+        <input style="width: 3%" id="m01" type="checkbox" />Jan
+        <input style="width: 3%" id="m02" type="checkbox" />Feb
+        <input style="width: 3%" id="m03" type="checkbox" />Mar
+        <input style="width: 3%" id="m04" type="checkbox" />Apr
+        <input style="width: 3%" id="m05" type="checkbox" />Maj
+        <input style="width: 3%" id="m06" type="checkbox" />Jun<br/>
+        <input style="width: 3%" id="m07" type="checkbox" />Jul
+        <input style="width: 3%" id="m08" type="checkbox" />Aug
+        <input style="width: 3%" id="m09" type="checkbox" />Sep
+        <input style="width: 3%" id="m10" type="checkbox" />Oct
+        <input style="width: 3%" id="m11" type="checkbox" />Nov
+        <input style="width: 3%" id="m12" type="checkbox" />Dec<br/><br/><br/>
+        <button>Save</button><br/><br/>
+        <button>Delete</button>
+    </fieldset>
+    <br/>
+    <button>Home</button>
+    <br/>
+      <hr />
+      <div style="text-align:right;font-size:11px;">
+        <a href="https://bit.ly/esprinkler" target="_blank" style="color:#aaa;"
+          >ESPrinkler 1.0.0 by Bubi</a
+        >
+      </div>
+    </div>
+    </div>
+</body>
+</html>

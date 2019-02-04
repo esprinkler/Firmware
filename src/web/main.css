@@ -1,0 +1,113 @@
+div,
+fieldset,
+input,
+select {
+  padding: 5px;
+  font-size: 1em;
+}
+input {
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+select {
+  width: 100%;
+}
+textarea {
+  resize: none;
+  width: 98%;
+  height: 318px;
+  padding: 5px;
+  overflow: auto;
+}
+body {
+  text-align: center;
+  font-family: verdana;
+}
+td {
+  padding: 0px;
+}
+button {
+  border: 0;
+  border-radius: 0.3rem;
+  background-color: #fbe085;
+  color: rgb(88, 88, 88);
+  line-height: 2.4rem;
+  font-size: 1.2rem;
+  width: 100%;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #fff495;
+}
+button.sprinkler {
+  border: 0;
+  border-radius: 0.3rem;
+  background-color: #47c266;
+  color: #fff;
+  line-height: 2.4rem;
+  font-size: 1.2rem;
+  width: 100%;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+button.sprinkler:hover {
+  background-color: #5aaf6f;
+}
+button.wateringSprinkler {
+  border: 0;
+  border-radius: 0.3rem;
+  background-color: #1fa3ec;
+  color: #fff;
+  line-height: 2.4rem;
+  font-size: 1.2rem;
+  width: 100%;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+button.wateringSprinkler:hover {
+  background-color: #0e70a4;
+}
+
+.danger {
+  background-color: #d43535;
+  color: #fff;
+}
+.danger:hover {
+  background-color: #931f1f;
+  color: #fff;
+}
+.timerEnabled {
+    color: #1fa3ec;
+}
+.timerEnabled:hover {
+    color: #0e70a4;
+}
+.timerDisabled {
+    color: #d43535;
+}
+.timerDisabled:hover {
+    color: #931f1f;
+}
+.bgrn {
+  background-color: #47c266;
+}
+.bgrn:hover {
+  background-color: #5aaf6f;
+}
+a {
+  text-decoration: none;
+}
+.p {
+  float: left;
+  text-align: left;
+}
+.q {
+  float: right;
+  text-align: right;
+}
