@@ -17,221 +17,217 @@
       <br />
 <fieldset>
     <legend>Module parameters</legend>
-    <br><b>Module type</b><br>
-    <select id="g99" name="g99"><option value="0">Sonoff Basic (1)</option><option value="1">Sonoff RF (2)</option><option value="3">Sonoff TH (4)</option><option value="4">Sonoff Dual (5)</option><option value="38">Sonoff Dual R2 (39)</option><option value="5">Sonoff Pow (6)</option><option value="42">Sonoff Pow R2 (43)</option><option value="6">Sonoff 4CH (7)</option><option value="22">Sonoff 4CH Pro (23)</option><option value="40">Sonoff S31 (41)</option><option value="7">Sonoff S2X (8)</option><option value="9">Sonoff Touch (10)</option><option value="27">Sonoff T1 1CH (28)</option><option value="28">Sonoff T1 2CH (29)</option><option value="29">Sonoff T1 3CH (30)</option><option value="10">Sonoff LED (11)</option><option value="21">Sonoff BN-SZ (22)</option><option value="25">Sonoff B1 (26)</option><option value="8">Slampher (9)</option><option value="20">Sonoff SC (21)</option><option value="43">Sonoff iFan02 (44)</option><option value="24">Sonoff Bridge (25)</option><option value="2">Sonoff SV (3)</option><option value="18">Sonoff Dev (19)</option><option value="11">1 Channel (12)</option><option value="12">4 Channel (13)</option><option value="13">Motor C/AC (14)</option><option value="14">ElectroDragon (15)</option><option value="15">EXS Relay(s) (16)</option><option value="30">Supla Espablo (31)</option><option value="34">Luani HVIO (35)</option><option value="32">Yunshan Relay (33)</option><option value="16">WiOn (17)</option><option value="45">Shelly 1 (46)</option><option value="46">Shelly 2 (47)</option><option value="44">BlitzWolf SHP (45)</option><option value="51">Teckin (52)</option><option value="58">Teckin US (59)</option><option value="52">AplicWDP303075 (53)</option><option value="54">Gosund SP1 v23 (55)</option><option value="64">Luminea ZX2820 (65)</option><option value="56">SK03 Outdoor (57)</option><option value="62">Digoo DG-SP202 (63)</option><option value="63">KA10 (64)</option><option value="48">Neo Coolcam (49)</option><option value="50">OBI Socket (51)</option><option value="60">OBI Socket 2 (61)</option><option value="59">Manzoku strip (60)</option><option value="49">ESP Switch (50)</option><option value="53">Tuya Dimmer (54)</option><option value="55">ARMTR Dimmer (56)</option><option value="57">PS-16-DZ (58)</option><option value="19">H801 (20)</option><option value="33">MagicHome (34)</option><option value="36">Arilux LC01 (37)</option><option value="39">Arilux LC06 (40)</option><option value="37">Arilux LC11 (38)</option><option value="41">Zengge WF017 (42)</option><option value="23">Huafan SS (24)</option><option value="65">Mi Desk Lamp (66)</option><option value="35">KMC 70011 (36)</option><option value="26">AiLight (27)</option><option value="47">Xiaomi Philips (48)</option><option value="61">YTF IR Bridge (62)</option><option value="31">Witty Cloud (32)</option><option selected="" value="17">Generic (18)</option></select><br><br>
-    
-    
+    <br/><b>Module type</b><br>
+    <select id="module">
+        <option value="0">Generic (0)</option>
+        <option value="1">Sonoff 4CH (1)</option>
+        <option value="2">Sonoff 4CH Pro (2)</option>
+        <option value="4">Sonoff 4CH Pro R2 (3)</option>
+    </select><br/>
+    <br/>
+    <br/><b>74HC595</b><br>
     <table>
         <tbody>
             <tr>
-                <td style="width:190px">D3 <b>GPIO0</b> Button1</td>
+                <td style="width:190px">DS (pin 14)</td>
                 <td style="width:160px">
-                    <select id="g0" name="g0">
-                        <option value="0">None (0)</option>
-
-                        <option value="0">Button1  (01)</option>
-                        <option value="0">Button1n (90)</option>
-                        <option value="0">Button2  (18)</option>
-                        <option value="0">Button2n (91)</option>
-
-                        <option value="0">Zone1    (17)</option>
-                        <option value="0">Zone1i   (90)</option>
-                        <option value="0">Zone2    (18)</option>
-                        <option value="0">Zone2i   (91)</option>
-
+                    <select id="shiftDs">
+                        <option value="255">None</option>
+                        <option value="0">D3 GPIO0 Button1</option>
+                        <option value="1">TX GPIO1 Serial Out</option>
+                        <option value="2">D4 GPIO2</option>
+                        <option value="3">RX GPIO3 Serial In</option>
+                        <option value="4">D2 GPIO4</option>
+                        <option value="5">D1 GPIO5</option>
+                        <option value="12">D6 GPIO12 Relay1</option>
+                        <option value="13">D7 GPIO13 Led1i</option>
+                        <option value="14">D5 GPIO14 Sensor</option>
+                        <option value="15">D8 GPIO15</option>
+                        <option value="16">D0 GPIO16</option>
                     </select>
                 </td>
             </tr>
             <tr>
-                <td style="width:190px">TX <b>GPIO1</b> Serial Out</td>
+                <td style="width:190px">SH_CP (pin 11)</td>
                 <td style="width:160px">
-                    <select id="g0" name="g0">
-                        <option value="0">None (0)</option>
-
-                        <option value="0">Button1  (01)</option>
-                        <option value="0">Button1n (90)</option>
-                        <option value="0">Button2  (18)</option>
-                        <option value="0">Button2n (91)</option>
-
-                        <option value="0">Zone1    (17)</option>
-                        <option value="0">Zone1i   (90)</option>
-                        <option value="0">Zone2    (18)</option>
-                        <option value="0">Zone2i   (91)</option>
-
+                    <select id="shiftShCp">
+                        <option value="255">None</option>
+                        <option value="0">D3 GPIO0 Button1</option>
+                        <option value="1">TX GPIO1 Serial Out</option>
+                        <option value="2">D4 GPIO2</option>
+                        <option value="3">RX GPIO3 Serial In</option>
+                        <option value="4">D2 GPIO4</option>
+                        <option value="5">D1 GPIO5</option>
+                        <option value="12">D6 GPIO12 Relay1</option>
+                        <option value="13">D7 GPIO13 Led1i</option>
+                        <option value="14">D5 GPIO14 Sensor</option>
+                        <option value="15">D8 GPIO15</option>
+                        <option value="16">D0 GPIO16</option>
                     </select>
                 </td>
             </tr>                
             <tr>
-                <td style="width:190px">D4 <b>GPIO2</b></td>
+                <td style="width:190px">ST_CP (pin 12)</td>
                 <td style="width:160px">
-                    <select id="g0" name="g0">
-                        <option value="0">None (0)</option>
-
-                        <option value="0">Button1  (01)</option>
-                        <option value="0">Button1n (90)</option>
-                        <option value="0">Button2  (18)</option>
-                        <option value="0">Button2n (91)</option>
-
-                        <option value="0">Zone1    (17)</option>
-                        <option value="0">Zone1i   (90)</option>
-                        <option value="0">Zone2    (18)</option>
-                        <option value="0">Zone2i   (91)</option>
-
+                    <select id="shiftStCp">
+                        <option value="255">None</option>
+                        <option value="0">D3 GPIO0 Button1</option>
+                        <option value="1">TX GPIO1 Serial Out</option>
+                        <option value="2">D4 GPIO2</option>
+                        <option value="3">RX GPIO3 Serial In</option>
+                        <option value="4">D2 GPIO4</option>
+                        <option value="5">D1 GPIO5</option>
+                        <option value="12">D6 GPIO12 Relay1</option>
+                        <option value="13">D7 GPIO13 Led1i</option>
+                        <option value="14">D5 GPIO14 Sensor</option>
+                        <option value="15">D8 GPIO15</option>
+                        <option value="16">D0 GPIO16</option>
                     </select>
                 </td>
             </tr>                
+        </tbody>
+    </table>
+    
+    <br/>
+    <br/>
+
+    <b>Sprinkler</b><br>
+    <table>
+        <tbody>
             <tr>
-                <td style="width:190px">RX <b>GPIO3</b> Serial In</td>
+                <td style="width:190px">Rain sensor</td>
                 <td style="width:160px">
-                    <select id="g0" name="g0">
-                        <option value="0">None (0)</option>
-
-                        <option value="0">Button1  (01)</option>
-                        <option value="0">Button1n (90)</option>
-                        <option value="0">Button2  (18)</option>
-                        <option value="0">Button2n (91)</option>
-
-                        <option value="0">Zone1    (17)</option>
-                        <option value="0">Zone1i   (90)</option>
-                        <option value="0">Zone2    (18)</option>
-                        <option value="0">Zone2i   (91)</option>
-
+                    <select id="master">
+                        <option value="255">None</option>
+                        <option value="0">D3 GPIO0 Button1</option>
+                        <option value="1">TX GPIO1 Serial Out</option>
+                        <option value="2">D4 GPIO2</option>
+                        <option value="3">RX GPIO3 Serial In</option>
+                        <option value="4">D2 GPIO4</option>
+                        <option value="5">D1 GPIO5</option>
+                        <option value="12">D6 GPIO12 Relay1</option>
+                        <option value="13">D7 GPIO13 Led1i</option>
+                        <option value="14">D5 GPIO14 Sensor</option>
+                        <option value="15">D8 GPIO15</option>
+                        <option value="16">D0 GPIO16</option>
                     </select>
                 </td>
-            </tr>                
+            </tr>
             <tr>
-                <td style="width:190px">D2 <b>GPIO4</b></td>
+                <td style="width:190px">Master Valve</td>
                 <td style="width:160px">
-                    <select id="g0" name="g0">
-                        <option value="0">None (0)</option>
+                    <select id="master">
+                        <option value="255">None</option>
+                        <option value="0">D3 GPIO0 Button1</option>
+                        <option value="1">TX GPIO1 Serial Out</option>
+                        <option value="2">D4 GPIO2</option>
+                        <option value="3">RX GPIO3 Serial In</option>
+                        <option value="4">D2 GPIO4</option>
+                        <option value="5">D1 GPIO5</option>
+                        <option value="12">D6 GPIO12 Relay1</option>
+                        <option value="13">D7 GPIO13 Led1i</option>
+                        <option value="14">D5 GPIO14 Sensor</option>
+                        <option value="15">D8 GPIO15</option>
+                        <option value="16">D0 GPIO16</option>
 
-                        <option value="0">Button1  (01)</option>
-                        <option value="0">Button1n (90)</option>
-                        <option value="0">Button2  (18)</option>
-                        <option value="0">Button2n (91)</option>
-
-                        <option value="0">Zone1    (17)</option>
-                        <option value="0">Zone1i   (90)</option>
-                        <option value="0">Zone2    (18)</option>
-                        <option value="0">Zone2i   (91)</option>
-
+                        <option value="64">Q0</option>
+                        <option value="65">Q1</option>
                     </select>
                 </td>
-            </tr>                
+            </tr>
+
             <tr>
-                <td style="width:190px">D1 <b>GPIO5</b></td>
+                <td style="width:190px">Zone 1</td>
                 <td style="width:160px">
-                    <select id="g0" name="g0">
-                        <option value="0">None (0)</option>
+                    <select id="zone1">
+                        <option value="255">None</option>
+                        <option value="0">D3 GPIO0 Button1</option>
+                        <option value="1">TX GPIO1 Serial Out</option>
+                        <option value="2">D4 GPIO2</option>
+                        <option value="3">RX GPIO3 Serial In</option>
+                        <option value="4">D2 GPIO4</option>
+                        <option value="5">D1 GPIO5</option>
+                        <option value="12">D6 GPIO12 Relay1</option>
+                        <option value="13">D7 GPIO13 Led1i</option>
+                        <option value="14">D5 GPIO14 Sensor</option>
+                        <option value="15">D8 GPIO15</option>
+                        <option value="16">D0 GPIO16</option>
 
-                        <option value="0">Button1  (01)</option>
-                        <option value="0">Button1n (90)</option>
-                        <option value="0">Button2  (18)</option>
-                        <option value="0">Button2n (91)</option>
-
-                        <option value="0">Zone1    (17)</option>
-                        <option value="0">Zone1i   (90)</option>
-                        <option value="0">Zone2    (18)</option>
-                        <option value="0">Zone2i   (91)</option>
-
+                        <option value="64">Q0</option>
+                        <option value="65">Q1</option>
                     </select>
                 </td>
-            </tr>                
+            </tr>
+
             <tr>
-                <td style="width:190px">D6 <b>GPIO12</b></td>
+                <td style="width:190px">Zone 2</td>
                 <td style="width:160px">
-                    <select id="g0" name="g0">
-                        <option value="0">None (0)</option>
+                    <select id="zone2">
+                        <option value="255">None</option>
+                        <option value="0">D3 GPIO0 Button1</option>
+                        <option value="1">TX GPIO1 Serial Out</option>
+                        <option value="2">D4 GPIO2</option>
+                        <option value="3">RX GPIO3 Serial In</option>
+                        <option value="4">D2 GPIO4</option>
+                        <option value="5">D1 GPIO5</option>
+                        <option value="12">D6 GPIO12 Relay1</option>
+                        <option value="13">D7 GPIO13 Led1i</option>
+                        <option value="14">D5 GPIO14 Sensor</option>
+                        <option value="15">D8 GPIO15</option>
+                        <option value="16">D0 GPIO16</option>
 
-                        <option value="0">Button1  (01)</option>
-                        <option value="0">Button1n (90)</option>
-                        <option value="0">Button2  (18)</option>
-                        <option value="0">Button2n (91)</option>
-
-                        <option value="0">Zone1    (17)</option>
-                        <option value="0">Zone1i   (90)</option>
-                        <option value="0">Zone2    (18)</option>
-                        <option value="0">Zone2i   (91)</option>
-
+                        <option value="64">Q0</option>
+                        <option value="65">Q1</option>
                     </select>
                 </td>
-            </tr>                
+            </tr>
+
             <tr>
-                <td style="width:190px">D7 <b>GPIO13</b> Led1i</td>
+                <td style="width:190px">Zone 3</td>
                 <td style="width:160px">
-                    <select id="g0" name="g0">
-                        <option value="0">None (0)</option>
+                    <select id="zone3">
+                        <option value="255">None</option>
+                        <option value="0">D3 GPIO0 Button1</option>
+                        <option value="1">TX GPIO1 Serial Out</option>
+                        <option value="2">D4 GPIO2</option>
+                        <option value="3">RX GPIO3 Serial In</option>
+                        <option value="4">D2 GPIO4</option>
+                        <option value="5">D1 GPIO5</option>
+                        <option value="12">D6 GPIO12 Relay1</option>
+                        <option value="13">D7 GPIO13 Led1i</option>
+                        <option value="14">D5 GPIO14 Sensor</option>
+                        <option value="15">D8 GPIO15</option>
+                        <option value="16">D0 GPIO16</option>
 
-                        <option value="0">Button1  (01)</option>
-                        <option value="0">Button1n (90)</option>
-                        <option value="0">Button2  (18)</option>
-                        <option value="0">Button2n (91)</option>
-
-                        <option value="0">Zone1    (17)</option>
-                        <option value="0">Zone1i   (90)</option>
-                        <option value="0">Zone2    (18)</option>
-                        <option value="0">Zone2i   (91)</option>
-
+                        <option value="64">Q0</option>
+                        <option value="65">Q1</option>
                     </select>
                 </td>
-            </tr>                
+            </tr>
+
             <tr>
-                <td style="width:190px">D5 <b>GPIO14</b></td>
+                <td style="width:190px">Zone 4</td>
                 <td style="width:160px">
-                    <select id="g0" name="g0">
-                        <option value="0">None (0)</option>
+                    <select id="zone4">
+                        <option value="255">None</option>
+                        <option value="0">D3 GPIO0 Button1</option>
+                        <option value="1">TX GPIO1 Serial Out</option>
+                        <option value="2">D4 GPIO2</option>
+                        <option value="3">RX GPIO3 Serial In</option>
+                        <option value="4">D2 GPIO4</option>
+                        <option value="5">D1 GPIO5</option>
+                        <option value="12">D6 GPIO12 Relay1</option>
+                        <option value="13">D7 GPIO13 Led1i</option>
+                        <option value="14">D5 GPIO14 Sensor</option>
+                        <option value="15">D8 GPIO15</option>
+                        <option value="16">D0 GPIO16</option>
 
-                        <option value="0">Button1  (01)</option>
-                        <option value="0">Button1n (90)</option>
-                        <option value="0">Button2  (18)</option>
-                        <option value="0">Button2n (91)</option>
-
-                        <option value="0">Zone1    (17)</option>
-                        <option value="0">Zone1i   (90)</option>
-                        <option value="0">Zone2    (18)</option>
-                        <option value="0">Zone2i   (91)</option>
-
+                        <option value="64">Q0</option>
+                        <option value="65">Q1</option>
                     </select>
                 </td>
-            </tr>                
-            <tr>
-                <td style="width:190px">D8 <b>GPIO15</b></td>
-                <td style="width:160px">
-                    <select id="g0" name="g0">
-                        <option value="0">None (0)</option>
-
-                        <option value="0">Button1  (01)</option>
-                        <option value="0">Button1n (90)</option>
-                        <option value="0">Button2  (18)</option>
-                        <option value="0">Button2n (91)</option>
-
-                        <option value="0">Zone1    (17)</option>
-                        <option value="0">Zone1i   (90)</option>
-                        <option value="0">Zone2    (18)</option>
-                        <option value="0">Zone2i   (91)</option>
-
-                    </select>
-                </td>
-            </tr>                
-            <tr>
-                <td style="width:190px">D0 <b>GPIO16</b></td>
-                <td style="width:160px">
-                    <select id="g0" name="g0">
-                        <option value="0">None (0)</option>
-
-                        <option value="0">Button1  (01)</option>
-                        <option value="0">Button1n (90)</option>
-                        <option value="0">Button2  (18)</option>
-                        <option value="0">Button2n (91)</option>
-
-                        <option value="0">Zone1    (17)</option>
-                        <option value="0">Zone1i   (90)</option>
-                        <option value="0">Zone2    (18)</option>
-                        <option value="0">Zone2i   (91)</option>
-
-                    </select>
-                </td>
-            </tr>                
+            </tr>
+            
         </tbody>
     </table>
             <button name="save" type="submit">Save</button>
