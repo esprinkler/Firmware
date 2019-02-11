@@ -10,5 +10,11 @@ enum LogLevel {
 };
 
 void AddLog(enum LogLevel level, const char* value);
+void AddLog(enum LogLevel level, String value);
+void AddLog(LogLevel level);
+
+#define LOGDATASIZE 520
+
+extern char log_data[LOGDATASIZE];
 
 #endif

@@ -16,14 +16,14 @@
 
 #define MODULE                 GENERIC              // [Module] Select default model
 
-#define NETWORK_HOSTNAME       "es"
+#define NETWORK_HOSTNAME       "esprinkler"
 #define NETWORK_IP             "0.0.0.0"         // [IpAddress1] Set to 0.0.0.0 for using DHCP or enter a static IP address
 #define NETWORK_GATEWAY        "192.168.1.1"     // [IpAddress2] If not using DHCP set Gateway IP address
 #define NETWORK_SUBNETMASK     "255.255.255.0"   // [IpAddress3] If not using DHCP set Network mask
 #define NETWORK_DNS            "192.168.1.1"     // [IpAddress4] If not using DHCP set DNS IP address (might be equal to WIFI_GATEWAY)
 
-#define WIFI_SSID              ""                // [Ssid] Wifi SSID
-#define WIFI_PASS              ""                // [Password] Wifi password
+#define WIFI_SSID              "Maneggio"                // [Ssid] Wifi SSID
+#define WIFI_PASS              "ciapa000"                // [Password] Wifi password
 #define WIFI_CONFIG_TOOL       WIFI_RETRY        // [WifiConfig] Default tool if wifi fails to connect
                                                  //   (WIFI_RESTART, WIFI_SMARTCONFIG, WIFI_MANAGER, WIFI_WPSCONFIG, WIFI_RETRY, WIFI_WAIT, WIFI_SERIAL)
 #define WIFI_CONFIG_NO_SSID    WIFI_WPSCONFIG    // Default tool if wifi fails to connect and no SSID is configured
@@ -131,7 +131,7 @@ typedef union {                            // Restricted by MISRA-C Rule 18.4 bu
     uint32_t mqtt_response : 1;            // 04
     uint32_t mdns_enabled : 1;             // 05
     uint32_t stop_flash_rotate  : 1;       // 06 Flash rotate is implemented to preserve flash from writings on same locations
-    uint32_t available7  : 1;              // 07
+    uint32_t time_append_timezone  : 1;    // 07
     uint32_t available8  : 1;              // 08
     uint32_t available9  : 1;              // 09
     uint32_t available10  : 1;             // 10
